@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Site 2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+    <div class="logo">
+        <h1>Afro Conexão</h1> <!-- Ou outro nome que você escolher -->
+    </div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/buscar">Procurar  Trancistas</a></li>
+            <li><a href="/indicar">Indicar Profissional</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/blog">Dicas & Cuidados</a></li>
+        </ul>
+    </nav>
+    
+    <div class="cta-button">
+        <a href="/cadastro-trancista" class="btn">Cadastrar Profissional</a>
+    </div>
+</header>
+
+<body>
+    <!-- Seção Hero (Destaque Inicial) -->
+    <section class="hero">
+      <h2>Encontre trancistas profissionais perto de você!</h2>
+        
+      </div>
+  <!-- Imagem de fundo (adicione no CSS) -->
+</section>
+  
+  
+    </section>
+
+    <section class="procurar">
+    <h2>Encontre um trancista na sua região</h2>
+    <div class="filtro">
+        <!-- Dropdown de Estados -->
+        <select id="estado" onchange="carregarCidades()">
+            <option value="">Selecione seu estado</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="BA">Bahia</option>
+            <option value="DF">Distrito Federal</option>
+              
+            <!-- Adicione todos os estados aqui -->
+        </select>
+
+        <!-- Dropdown de Cidades (Dinâmico) -->
+        <select id="cidade" disabled>
+            <option value="">Selecione uma cidade</option>
+            <option value="SP">São Paulo</option>
+            <option value="GRU">Guarulhos</option>
+            <option value="Osasc">Osasco</option>
+            <option value="Campi">Campinas</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="ARS">Angra dos Reis</option>
+            <option value="CBF">Cabo Frio</option>
+            <option value="ACB">Arraial do Cabo</option>
+            <option value="POA">Porto Alegre</option>
+            <option value="PEL">Pelotas</option>
+            <option value="RIO GRANDE">Rio Grande</option>
+            <option value="SM">Santa Maria</option>
+            <option value="BH">Belo Horizonte</optino>
+            <option value="BET">Betim</option>
+            <option value="IIG">Ipatinga</option>
+            <option value="ULA">Uberlândia</option>
+            <option value="SSA">Salvador</option>
+            <option value="FSA">Feira de Santana</option>
+            <option value="JUAZEIRO">Juazeiro</option>
+            <option value="CAMAÇARI">Camaçari</option>
+            <option value="ESTRUTURAL">Estrutural</option>
+            <option value="RA XIV">São Sebastião</option>
+            <option value="RA">Paranoá</option>
+            <option value="RA XXXII">Sol Nascente</option>
+      
+        </select>
+
+        <button onclick="buscarTrancistas()" class="btn">Buscar</button>
+    </div>
+</section>
+
+
+
+    <!-- Seção "Indicar Profissional" -->
+    <section class="indicar">
+        <h2>Conhece uma trancista incrível?</h2>
+        <p>Ajude a comunidade indicando profissionais que você recomenda!</p>
+        <form action="/indicar" method="POST">
+            <input type="text" placeholder="Nome da trancista" required>
+            <input type="text" placeholder="Instagram ou WhatsApp" required>
+            <input type="text" placeholder="Cidade/Estado" required>
+            <button type="submit" class="btn">Enviar Indicação</button>
+        </form>
+    </section>
+
+    <!-- Seção "Sobre" -->
+    <section class="sobre">
+        <h2>Sobre o Afro Conexão</h2>
+        <p>Nosso propósito é conectar clientes a trancistas talentosos em todo o país, de forma simples e segura. Aqui, você encontra profissionais verificados e compartilha recomendações sem expor dados privados.</p>
+        <p><strong>Não cobramos nada</strong> – é um serviço gratuito para promover o trabalho desses artistas!</p>
+    </section>
+
+    <!-- Seção "Dicas & Cuidados" -->
+    <section class="dicas">
+        <h2>Dicas para manter suas tranças lindas</h2>
+        <div class="dica">
+              <p>Use óleos naturais (como óleo de coco) para evitar ressecamento.</p>
+        </div>
+            <h3>Hidratação</h3>
+           <img src="https://i.postimg.cc/W1DWrNTW/Design-sem-nome-1.png" alt="Hidratação de tranças">
+        <div class="dica">
+            <h3>Durabilidade</h3>
+            <p>Evite dormir com as tranças soltas – use uma touca ou lenço de cetim.</p>
+      </div>
+           <img src="https://i.postimg.cc/bN4jMNYb/Design-sem-nome-3.png" alt="Hidratação de tranças">
+        </div>
+        <div class="dica">
+          
+            <h3>Indicações</h3>
+            <p>Procure trancistas que usem materiais hipoalergênicos.</p>
+        </div>    
+      <a href="/blog" class="btn">Veja mais dicas</a>
+    </section>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
